@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="opis"></div>
+    <script>
+        let ocena = prompt("Podaj ocenę");
+        let opis = document.getElementById("opis");
+        switch(ocena) {
+            case "1":
+                opis.innerHTML="<h1>Niedostateczna</h1>"
+            break;
+            case "2":
+                opis.innerHTML="<h1>Dopuszczający</h1>"
+            break;
+            case "3":
+                opis.innerHTML="<h1>Dostateczny</h1>"
+            break;
+            case "4":
+                opis.innerHTML="<h1>Dobry</h1>"
+            break;
+            case "5":
+                opis.innerHTML="<h1>Bardzo dobry</h1>"
+            break;
+            case "6":
+                opis.innerHTML="<h1>Celujący</h1>"
+            break;
+            default:
+                opis.innerHTML="<h1>Nie znam takiej oceny</h1>"
+            break;
+        }
+        
+    </script>
+</body>
+</html>
+
+
+
+<!-- Napisz kod, który dla zdefiniowanej szkolnej oceny (1,2,3,4,5,6) lub pobranej od użytkownika w formie liczby, wypisze jej opis słowny np. dostateczny. Informacja ma być wypisana w div-ie id="oceny". Jeśli użytkownik poda ocenę z poza zakresu poinformuj go o tym.
+
+POMOC:
+Należy skorzystać z instrukcji switch, która porównuje wartość zadaną
+z przypadkami case{}, które ma zdefiniowane, jeśli wartość zadana spełnia, 
+któryś z warunków wykonywany jest dany fragment kodu. 
+Jeśli nie jest spełniony żaden z warunków, wykonywany jest kod deafult{} -->
+
