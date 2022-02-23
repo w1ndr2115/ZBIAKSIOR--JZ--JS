@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="opis"></div>
+    <script>
+        let liczba = prompt("Podaj liczbę");
+        let opis = document.getElementById("opis");
+
+        // if(liczba>0){
+        //     opis.innerHTML="<h1>dodatnia</h1>"
+        // }
+        // else{
+        //     opis.innerHTML="<h1>0/ujemna</h1>"
+        // }
+
+        
+        (liczba>0) ? opis.innerHTML="<h1>dodatnia</h1>" : opis.innerHTML="<h1>0/ujemna</h1>";
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- Pobierz od użytkownika liczbę. Jeśli będzie dodatnia w div-ie z id="opis" ma się wyświetlić np. tekst "dodatnia". Jeśli nie ma się pokazać np. tekst: "0/ujemna". Wykorzystaj instrukcję warunkową if ze składnią wykorzystującą symbole ? :.
+
+POMOC:
+Instrukcja warunkowa if else może przyjmować 3 podstawowe
+zapisy.
+// 1 możliwy zapis:
+        if(warunek){
+            instrukcja dla TRUE;
+        }
+        else {
+            instrukcja dla FALSE;
+        }
+// 2 możliwy zapis:
+        if(warunek) instrukcja dla TRUE; else instrukcja dla FALSE;       
+// 3 możliwy zapis:
+        (warunek) ? instrukcja dla TRUE : instrukcja dla FALSE; -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    
+    </style>
+</head>
+<body>
+    <p id="paragraf"></p>
+    
+    <script>
+    
+
+    let paragraf = document.getElementById("paragraf");
+        
+    const info_personal = ["Misha Aksonov", "Kajetan Pawlak","Krzysztof Godyń", "Kacper Kozłowski","Mikołaj Szlosowski"];
+        
+        let nazwiska = [];
+        for(i = 0; i < info_personal.length; i++){
+            let x = info_personal[i].indexOf(" ");
+            nazwiska.push(info_personal[i].substr(x+1))
+        }
+        nazwiska.sort();
+        // for(item of nazwiska){
+        //     paragraf.innerHTML += `<h3> ${item} </h3>`
+        // }
+        const result =nazwiska.map(n => `<h3> ${n} </h3>`)
+        paragraf.innerHTML = result.join("");
+        
+
+        
+    </script>
+</body>
+</html>
+
+<!-- Dla tablicy z cw1 >  nazwiska osób z tablicy, wyświetl jako nagłówki 3 stopnia, które będą posortowane alfabetycznie.
+
+POMOC:
+W zadaniu tym trzeba odpowiednio połączyć ze sobą poznane metody:
+map()
+substr() > patrz przyklad5a.html
+indexOF() > patrz przyklad5b.html
+sort()
+join() -->

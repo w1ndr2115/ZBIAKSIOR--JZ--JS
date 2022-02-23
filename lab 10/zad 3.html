@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body{
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    
+    <input id="suwak" type="range" min="0" max="255" value="0">
+    <script>
+        let suwak = document.getElementById("suwak");
+        
+        
+        suwak.addEventListener("click", function(){
+            let value = suwak.value;
+            document.body.style.backgroundColor='rgb('+value+',0,0)';
+        });
+        
+    </script>
+</body>
+</html>
+
+<!-- ZAD3
+Utwórz stronę która ma czarne tło i zawiera suwak. Na suwaku można ustawić wartość od 0 do 255, domyślnie 0. Suwak ma umożliwiać zmianę składowej R, koloru tła strony.
+
+POMOC:
+Zmiana ustawionej wartości na suwaku, ma powodować 2 działania:
+1. zmianę składowej R koloru tła i przepisanie aktualnej
+body.style.backgroundColor='rgb('+red+',0,0)';
+2. przepisanie wartości ustawionej na suwaku do div-a wynik
+wynik.innerHTML=red; -->

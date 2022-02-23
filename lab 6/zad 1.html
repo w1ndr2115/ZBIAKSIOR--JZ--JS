@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="opis"></div>
+    <script>
+        let opis = document.getElementById("opis");
+        let liczba = prompt("Wpisz liczbę");
+        if(liczba > 0){
+            {
+                opis.innerHTML="<h1>liczba jest większa od zera.</h1>";
+            }
+        } 
+        else{
+            {
+                opis.innerHTML="<h1>Zero lub liczba ujemna</h1>";
+            }
+        }
+    </script>
+</body>
+</html>

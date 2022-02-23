@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body{
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    
+    <input id="suwakr" type="range" min="0" max="255" value="0">
+    <input id="suwakg" type="range" min="0" max="255" value="0">
+    <input id="suwakb" type="range" min="0" max="255" value="0">
+    <script>
+        let suwakr = document.getElementById("suwakr");
+        let suwakg = document.getElementById("suwakg");
+        let suwakb = document.getElementById("suwakb");
+        
+        
+        suwakr.addEventListener("click", function(){
+            
+            document.body.style.backgroundColor='rgb('+suwakr.value+','+suwakg.value+ ','+suwakb.value+')';
+        });
+        suwakg.addEventListener("click", function(){
+            
+            document.body.style.backgroundColor='rgb('+suwakr.value+','+suwakg.value+ ','+suwakb.value+')';
+        });
+        suwakb.addEventListener("click", function(){
+            
+            document.body.style.backgroundColor='rgb('+suwakr.value+','+suwakg.value+ ','+suwakb.value+')';
+        });
+    </script>
+</body>
+</html>
+
+<!-- ZAD4
+Wstaw 3 suwaki odpowiedzialne za 3 składowe koloru RGB, zmiana położenia ma zmieniać daną składową. Wyświetlana ma być aktualnie zmieniana wartość. Wartości początkowe - 255 - kolor biały.
+
+POMOC:
+Zmiana ustawionej wartości na DOWOLNYM suwaku, powinna powodować
+odczytanie aktualnych wartości na WSZYSTKICH suwakach i ustawienie 
+składowych R G B koloru tła zgodnie z tymi odczytami. -->

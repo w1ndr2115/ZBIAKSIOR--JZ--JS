@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    div{
+        width: 250px;
+        height: 250px;
+        border: 2px solid green ;
+    
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="div"> <input type="submit" value="Zmien tlo " onclick="bg()">
+    <input type="submit" value="Zmien tlo " onclick="bg2()"></div>
+    <script>
+        let div=document.getElementById("div");
+        function bg(){
+            div.style.backgroundColor = "red";
+        }
+        function bg2(){
+            div.style.backgroundColor = "blue";
+        }
+
+
+    </script>
+</body>
+</html>
+
+<!-- 
+Utwórz div-a 250px na 250px z zielonym obramowaniem. Dodaj dwa przyciski Czerwone tło Niebieskie tło, kliknięcie na przycisk ma zmieniać kolor div-a na dany.
+
+POMOC:
+W reakcji na kliknięcie na dany przycisk zmienia się kolor div-a.
+Zapis div.style.backgroundColor='red'; zmienia kolor tła elementu div -->
+
