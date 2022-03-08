@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    main{
+        background: rgb(73,189,203);
+        background: linear-gradient(0deg, rgba(73,189,203,1) 0%, rgba(165,233,148,1) 100%);
+        height: 100vh;
+    }
+    body{
+        background: rgba(255, 255, 255, 0.5); 
+        backdrop-filter: blur(100px);
+        font-family: 'Sansita Swashed', cursive;
+    }
+    header{
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        text-shadow: 0 0 20px black;
+        
+        }
+    #Author{
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 14px ;
+        font-size: 20px;
+        padding: 0;
+        text-shadow: 0 0 8px black;
+        width: 400px;
+        position: fixed;
+        left:50%;
+        transform: translate(-50%);
+        }
+    button{
+        font-family: 'Sansita Swashed', cursive;
+        box-shadow: 0 0 25px 2px black;
+        font-size: 20px;
+        border-radius: 14px ;
+        background-color: black;
+        color: white;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 10px;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        
+    }
+    
+    button:hover{
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        cursor: pointer;
+    }
+    
+    p{
+        font-size: 34px;
+        text-shadow:0 0 20px black;
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="blur">
+
+    
+        <main>
+            <header>
+                Losowanie liczb<br>
+                <div id="Author">Pracę wykonał Mykhailo Aksonov</div>
+            </header>
+
+            <p id="numer"></p>
+            <button id="los">wylosuj</button>
+            
+        </main>
+    </div>
+    <script>
+        let losowy = document.querySelector("#los");
+        let numer = document.querySelector("#numer");
+        let x ;
+            losowy.addEventListener("click" , function(){
+                numer.innerHTML= ``;
+                console.log("Pracę wykonał Mykhailo Aksonov")
+                for(i=0; i<6; i++ ){
+                x = Math.round(Math.random()*50)
+                console.log("Pracę wykonał Mykhailo Aksonov");
+                numer.innerHTML +=`${x}  `;
+                
+            }
+            
+
+
+        });
+        
+        
+    </script>
+</body>
+</html>
+
+<!-- Wykonaj maszynę losującą dla LOTTO, czyli, wylosuj 6 przypadkowych liczb z zakresu od 1 do 49.  
+
+POMOC:
+Dla wywołania kolejnych losowań skorzystaj z pętli for. 
+Odpowiedniej metody do losowania poszukaj w opisie obiektu Math.
+
+Dodatkowo na celujący:
+Przygotuj atrakcyjne formatowanie dla wyświetlanych wyników na stronie (css, grafika, przycisk losujący, itp.)
+
+-->
