@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a"></div>
+
+
+    <script>
+        let liczbyT = [];
+        
+        for(i = 0; i<5 ;i++){
+            liczbyT.push(parseFloat(prompt("podaj jedzenie")));
+        };
+        
+        function sumator(...liczby){
+            let sum = 0;
+            
+            
+            for(let i of liczby){
+                sum+=i;
+            }
+            console.log(liczby);
+            return sum;
+            
+        }
+        
+        document.getElementById("a").innerHTML =  `suma wynosi ${sumator(...liczbyT)}, liczby to ${liczbyT}`
+        
+    </script>
+</body>
+</html>

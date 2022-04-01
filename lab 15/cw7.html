@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="przycisk" value="imie"></input>
+    <div id="twojs"></div>
+    <script>
+        let button = document.getElementById("przycisk");
+        let imie = prompt("podaj imie")
+        button.addEventListener("click", function(){
+            document.getElementById("twojs").innerHTML = `Witaj ${imie}`
+        });
+
+    </script>
+</body>
+</html>

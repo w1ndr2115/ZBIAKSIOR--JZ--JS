@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+    <style> 
+    
+    
+    </style>
+</head>
+<body >
+    
+    
+    
+    <script>
+        let radius = prompt("podaj radius");
+
+        function poleKola(radius){
+            if(radius<0){
+                document.write("błąd");
+            }
+            else {
+                document.write(`<h3>pole koła wynosi ${radius*radius*Math.PI}`)
+            }
+        };
+
+        poleKola(radius);
+    </script>
+</body>
+</html>
+
+<!-- Napisz własną funkcję, która dla podanego promienia >0 oblicza pole koła. Do pobrania danych od użytkownika wykorzystaj okno dialogowe. Wynik wyświetl w nagłówku <h3>
+
+    POMOC:
+    Funkcję definiujemy używając słowa kluczowego function i podające nazwę
+    funkcji. W przypadku funkcji z argumentami. Argumenty podajemy w nawiasie().
+    Działania, które wykonuje funkcja znajdują się pomiędzy {}.
+    
+    Wywołując funkcję zamiast nazwy argument podajemy jego wartość
+    np. poleKola(r), gdzie r to zmienna, w której znajduje się promień -->
